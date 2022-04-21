@@ -2,68 +2,176 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MCB Twitch Chat Commands</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Overpass:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+    <title>twitch.tv/djmarcusmcb - Chat Commands</title>
   </head>
-  <style>
-    html {
-      font-family: 'Roboto', sans-serif;
-    }
-    .container {
-      text-align: center;
-    }
-  </style>
+
   <body>
-    <div class="container">
-      <h1>Twitch.TV/DJMarcusMCB | Chat Commands</h1>
-      <br />
-      <p>
-        <strong>!points</strong> - displays your current total channel points
-      </p>
-      <p>
-        <strong>!gamble (amount)</strong> - gambles however many channel points
-        you've specified (good luck!)
-      </p>
-      <p><strong>!lurk</strong> - (user) is over there, doin' whatever...</p>
-      <p><strong>!back</strong> - Lurk no more... (user) has returned!</p>
-      <p><strong>!host</strong> - Link to my channel to host/share it.</p>
-      <p><strong>!prime</strong> - Link to sub to my channel for free via Prime.</p>
-      <p>
-        <strong>!so (username)</strong> - adds a link to that Twitch user's page
-        to the chat
-      </p>
-      <p>
-        <strong>!followage</strong> - displays how long you've been following me
-        on Twitch
-      </p>
-      <p>
-        <strong>!uptime</strong> - displays how long the current stream has been
-        running
-      </p>      
-      <p><strong>!links</strong> - throws a link to my Linktree in the chat</p>
-      <p>
-        <strong>!sc</strong> - throws a link to my Soundcloud page in
-        the chat
-      </p>
-      <p><strong>!bootspants</strong> - untz untz untz untz...</p>
-      <p><strong>!dadjoke</strong> - guess...</p>
-      <p><strong>!fact</strong> - drop a random fact in the chat!</p>
-      <p><strong>!8ball (question)</strong> - ask away (good luck!)</p>
-      <p><strong>!714</strong> - where is this dude anyway?</p>
-      <p><strong>!np</strong> - it'll save you the trouble of having to Shazam it</p>
-      <p><strong>!lights</strong> - add one of the options to change the color of my smart lights!</p>
+    <div class="titlebar">
+      <div class="titlebar-item">
+        <img src="./images/mcb.jpg" alt="MCB Square Logo, Black" />
+      </div>
+      <div class="titlebar-item">
+        <div class="titleblock">
+          <div><a href="https://www.twitch.tv/djmarcusmcb" target="_blank">twitch.tv/djmarcusmcb</a></div>
+          <div class="titleblock-title">chat commands</div>
+        </div>
+      </div>
+    </div>
 
+    <div class="commands-body">
+      <div class="command-section">
+        general
+      </div>
+      <div class="command-column">
+        <div class="command-title">!points</div>
+        <div class="command-description">
+          displays your current channel points
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!gamble <i>amount</i></div>
+        <div class="command-description">
+          wagers the amount of channel points you've specified (good luck!)
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!lurk</div>
+        <div class="command-description">
+          you've got stuff to do, i understand
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!back</div>
+        <div class="command-description">
+          lurk no more, you've returned to the chat!
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!host</div>
+        <div class="command-description">
+          a friendly reminder to host the stream
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!prime</div>
+        <div class="command-description">
+          a link to subscribe to my channel for free with Prime
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!uptime</div>
+        <div class="command-description">
+          if you want to know how long the current stream has been going
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!links</div>
+        <div class="command-description">
+          displays a link to my Linktree page
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!sc</div>
+        <div class="command-description">
+          displays a link to my Soundcloud page
+        </div>
+      </div>
 
-      <p><strong>!commands</strong> - throws a link to this page in the chat</p>
-      <br />
-      <h3>
-        <a href="https://www.twitch.tv/djmarcusmcb">Back To The Channel</a>
-      </h3>
+      <div class="command-section">
+        fun stuff
+      </div>
+      <div class="command-column">
+        <div class="command-title">!dadjoke</div>
+        <div class="command-description">
+          we all need one from time to time
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!8ball <i>question</i></div>
+        <div class="command-description">
+          your burning questions are answered here
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!fact</div>
+        <div class="command-description">
+          knowing stuff is cool
+        </div>
+      </div>   
+
+      <div class="command-section">
+        music stuff
+      </div>
+      <div class="command-column">
+        <div class="command-title">!np</div>
+        <div class="command-description">
+          title/artist info for the song currently playing
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!np previous</div>
+        <div class="command-description">
+          title/artist info for the previous song played
+        </div>
+      </div>
+      <div class="command-column">
+        <div class="command-title">!np start</div>
+        <div class="command-description">
+          title/artist info for the first song of my set
+        </div>
+      </div>      
+      <div class="command-column">
+        <div class="command-title">!np vibecheck</div>
+        <div class="command-description">
+          title/artist info for a random song I've previously played in my set and how long ago I played it
+        </div>
+      </div>      
+      <div class="command-column">
+        <div class="command-title">!np total</div>
+        <div class="command-description">
+          displays the total number of songs played thus far in my set
+        </div>
+      </div>      
+      <div class="command-column">
+        <div class="command-title">!dyp <i>artist name</i></div>        
+        <div class="command-description">
+          "did you play...?" - searches my tracks played thus far to see if I've played the artist you've given
+        </div>
+      </div>    
+
+      <div class="command-section">
+        lights
+      </div>
+      <div class="command-column">
+        <div class="command-title">!lights on</div>        
+      </div>
+      <div class="command-column">
+        <div class="command-title">!lights off</div>        
+      </div>
+      <div class="command-column">
+        <div class="command-title">!lights morph</div>        
+      </div>
+      <div class="command-column">
+        <div class="command-title">!lights <i>color</i></div>    
+        <div class="command-description">
+          color options - green, pink, teal, purple, red, gold, blue, peach
+        </div>    
+      </div>
+          
+      
+    </div>
+    <div class="footer">
+      <a href="https://www.mcbportfolio.com/" target="_blank">MCB, 2022</a>
     </div>
   </body>
 </html>
