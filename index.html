@@ -30,6 +30,16 @@
 					<div class="titleblock-title">chat commands</div>
 				</div>
 			</div>
+			<div class="titlebar-item titlebar-item--right">
+				<button
+					type="button"
+					class="theme-toggle"
+					id="themeToggle"
+					aria-label="Toggle dark mode"
+				>
+					Dark mode
+				</button>
+			</div>
 		</div>
 
 		<!-- GENERAL COMMANDS -->
@@ -458,5 +468,50 @@
 		<div class="footer">
 			<a href="https://www.mcbportfolio.com/" target="_blank">MCB, 2026</a>
 		</div>
+
+		<script>
+			(() => {
+				const storageKey = 'theme';
+				const root = document.documentElement;
+				const toggleButton = document.getElementById('themeToggle');
+
+				const getPreferredTheme = () => {
+					const saved = localStorage.getItem(storageKey);
+					if (saved === 'dark' || saved === 'light') return saved;
+					return window.matchMedia &&
+						window.matchMedia('(prefers-color-scheme: dark)').matches
+						? 'dark'
+						: 'light';
+				};
+
+				const applyTheme = (theme) => {
+					if (theme === 'dark') {
+						root.setAttribute('data-theme', 'dark');
+					} else {
+						root.removeAttribute('data-theme');
+					}
+
+					if (toggleButton) {
+						toggleButton.textContent =
+							theme === 'dark' ? 'Light mode' : 'Dark mode';
+						toggleButton.setAttribute(
+							'aria-label',
+							theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+						);
+					}
+				};
+
+				applyTheme(getPreferredTheme());
+
+				if (toggleButton) {
+					toggleButton.addEventListener('click', () => {
+						const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+						const next = current === 'dark' ? 'light' : 'dark';
+						localStorage.setItem(storageKey, next);
+						applyTheme(next);
+					});
+				}
+			})();
+		</script>
 	</body>
 </html>

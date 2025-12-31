@@ -1,4 +1,8 @@
 # twitch-chat-commands
-List of chat commands for MCB Twitch channel.
+List of chat commands for https://www.twitch.tv/djmarcusmcb
 
-Last updated 1/30/21.
+Includes a client-side dark mode toggle (saved in `localStorage`), so it still works as a fully static GitHub Pages site.
+
+Last updated 12/30/25.
+
+Marcus McBride, 2025/2026
